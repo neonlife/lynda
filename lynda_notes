@@ -33,4 +33,4 @@ Build lifecycle
     - Everything in maven is done using a plugin
     - A plugin is an artifact that has one or more mojos (maven plain old java objects)
     - Mojo is a goal in Maven, e.g. complier:compile plugin is a mojo
-    - <plugin-name>-maven-plugin
+    - {plugin-name}-maven-plugin
