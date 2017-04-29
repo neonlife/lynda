@@ -34,3 +34,30 @@ Build lifecycle
     - A plugin is an artifact that has one or more mojos (maven plain old java objects)
     - Mojo is a goal in Maven, e.g. complier:compile plugin is a mojo
     - {plugin-name}-maven-plugin
+
+
+--------------------------------------------------
+- Java SE 8 New Features -------------------------
+--------------------------------------------------
+Nashorn javascript engine: jjs
+ → jjs
+jjs> var welcome = "Hello"
+jjs> welcome
+Hello
+jjs> welcome.length
+5
+jjs> welcome += ", David"
+Hello, David
+jjs> var input = new java.util.Scanner(new java.net.URL("http://services.explorecalifornia.org/rss/tours.php").openStream())
+jjs> input.useDelimiter("$")
+java.util.Scanner[delimiters=$][position=0][match valid=false][need input=false][source closed=false][skipped=false][group separator=\,][decimal separator=\.][positive prefix=][negative prefix=\Q-\E][positive suffix=][negative suffix=][NaN string=\Q�\E][infinity string=\Q∞\E]
+jjs> var contents = input.next()
+
+New Collection Methods
+forEach(), removeIf(), replaceAll(), sort(), forEachRemaining()
+
+Base64 has Encoder, Decoder
+
+Object class has method isNull and nonNull
+Lazy messages
+Matcher/Pattern class improvements
