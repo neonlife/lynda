@@ -61,3 +61,32 @@ Base64 has Encoder, Decoder
 Object class has method isNull and nonNull
 Lazy messages
 Matcher/Pattern class improvements
+
+--------------------------------------------------
+- Learning Go ------------------------------------
+--------------------------------------------------
+gofmt -w badformatfile.go
+export GOOS=darwin
+go run mycode.go
+
+explicit type: var anInteger int
+implicit type: anInteger := 42
+explicit const: const anInteger int = 42
+implicit const: const anInteger = 42
+
+Arrays Slices Maps Structs
+Functions Interfaces Channels
+Pointers
+
+new()  -> allocates but does not initialize memory
+make() -> allocates and initializes memory (PREFERRED)
+
+No inheritance
+Pass by value by default, and functions operating on them will not change original object
+If pass by pointer, functions operating on them will change original
+
+defer: used in opening file/database and closing the connection
+
+Concurrency: Goroutine, Channel, Select
+Web Frameworks: Beego, Martini, Gorilla, Gocraft, Revel
+Database Drivers: database/sql, database/sql/driver
