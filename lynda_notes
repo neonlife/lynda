@@ -26,7 +26,7 @@ Build lifecycle
             <plugins><plugin>
             <groupId>some.group</groupId>
             <artifactId>artifact</artifactId>>
-            </plugin></plug
+            </plugin></plugin>
         </profile>
     </profiles>
 - maven is a plugin execution framework
@@ -81,6 +81,9 @@ Pointers
 new()  -> allocates but does not initialize memory
 make() -> allocates and initializes memory (PREFERRED)
 
+type myStruct struct
+type SomeInterface interface
+
 No inheritance
 Pass by value by default, and functions operating on them will not change original object
 If pass by pointer, functions operating on them will change original
@@ -90,3 +93,27 @@ defer: used in opening file/database and closing the connection
 Concurrency: Goroutine, Channel, Select
 Web Frameworks: Beego, Martini, Gorilla, Gocraft, Revel
 Database Drivers: database/sql, database/sql/driver
+
+Go knows to call two functions on initial execution, `init` and `main`. Init will be called first for setup instructions, and main is called next.
+
+--------------------------------------------------
+- React.js Essential Training --------------------
+--------------------------------------------------
+Babel: Javascript transpiler
+cat .babelrc
+{ 'presets': ['latest', 'react', 'stage-0'] }
+babel ./src/index.js --out-file ./dist/bundle.js
+
+Webpack: module bundler, creates static files, automate processes
+
+--------------------------------------------------
+- Learning Go for Web Development ----------------
+--------------------------------------------------
+~/gocode/src/github.com/neonlife/bookstore
+
+
+
+
+
+
+
